@@ -1,21 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0A192F;
+  --accents:#5A67D8;
+  --cta:#3B82F6;
+  --text-color:#fcfcfc ;
+  --font-main:"Inter", sans-serif;
+  --font-second:"Montserrat", sans-serif;
+  --font-serif:"Merriweather", serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background:  #0A192F;
+    --foreground: #5A67D8;
   }
 }
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--background);
+  background: var(--text-color);
+  font-family: var(--font-second);
 }

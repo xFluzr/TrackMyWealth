@@ -1,16 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Inter, Montserrat, Merriweather } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin-ext"] });
+const monsterrat = Montserrat({ subsets: ["latin-ext"] });
+const merriweather = Merriweather({weight:"400", subsets: ["latin-ext"] });
 
 export const metadata: Metadata = {
   title: "Track My Wealth",
@@ -25,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.className} ${merriweather.className} antialiased`}
       >
         {children}
       </body>
