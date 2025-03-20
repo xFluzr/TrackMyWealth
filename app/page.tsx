@@ -11,11 +11,10 @@ export default function Home() {
   console.log(dupa)
 
   return (
-    <div>
+    <div className="font-main">
      <Navbar/>
      <LandingPage/>
      <Footer/>
-    </div>
-    
+    </div> 
   );
 }

@@ -7,9 +7,14 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundColor:{
+        "investing-green":"var(--investing-green)"
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "text-color":"var(--text-color)",
+        "investing-green":"var(--investing-green)"
       },
     },
   },
