@@ -4,13 +4,14 @@ type BtnProps = {
   link: string;
   isActive?: boolean;
   text: string;
+  customClass?:string
 };
-export default function Button({ link, isActive = false, text }: BtnProps) {
+export default function Button({ link, isActive = false, text,customClass="" }: BtnProps) {
   return (
     <Link
       href={link}
-      className={`text-center rounded-full font-bold border-slate-800 border-2 px-8 py-4 text-xl transition-all hover:shadow-lg ${
-        isActive ? "bg-green-400" : ""
+      className={`text-center font-main rounded-full font-bold text-md transition-all hover:opacity-75 hover:shadow-md ${
+        isActive ? `${customClass} bg-white text-black ` : ""+customClass
       }`}
     >
       {text}
