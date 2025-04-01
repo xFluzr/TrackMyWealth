@@ -1,7 +1,20 @@
+import Footer from "./components/Footer/Footer";
+import LandingPage from "./components/LandingPage/LandingPage";
+import Navbar from "./components/Navbar/Navbar";
+
 export default function Home() {
+  let hello=true;
+  const {dupa,dupaLepsza}={
+    dupaLepsza:"1",
+    dupa:143
+  }
+  console.log(dupa)
+
   return (
-    <div>
-      <h1>Work in progress </h1>
-    </div>
+    <div className="font-main">
+     <Navbar/>
+     <LandingPage/>
+     <Footer/>
+    </div> 
   );
 }
